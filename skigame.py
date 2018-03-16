@@ -50,6 +50,15 @@ class Scene(object):
 
 class Death(Scene):
 
+    quips = [
+        "You made a poor choice here, and thus don't leave the lake",
+        "Bested once again by Whiteface",
+        "The land of no consequences...has consequences"
+    ]
+
+    def enter(self):
+        print(Death.quips[randint(0, len(self.quips)-1)])
+
 class Travel(Scene):
 
 class Ski(Scene):
@@ -66,6 +75,6 @@ class Finished(Scene):
         print("You Won! Good Job")
         return 'finished'
 
-a_map = Map('****First scene, fix')
+a_map = Map('tavel')
 a_game = Engine(a_map)
 a_game.play()
