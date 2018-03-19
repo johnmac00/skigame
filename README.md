@@ -1,2 +1,1 @@
-# skigame
-# skigame
+# skigame, inspired by LPTHW ex43
